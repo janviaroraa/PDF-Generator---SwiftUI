@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12C265A62DE9F2480080D912 /* PDFReportGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C265A52DE9F2480080D912 /* PDFReportGeneratorApp.swift */; };
+		12C265B42DE9F44D0080D912 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C265B32DE9F44D0080D912 /* APIService.swift */; };
+		12C265B62DE9F4ED0080D912 /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C265B52DE9F4ED0080D912 /* TransactionModel.swift */; };
+		12C265BC2DE9F6E30080D912 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C265BB2DE9F6E30080D912 /* HomeView.swift */; };
+		12C265BE2DE9F6FB0080D912 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C265BD2DE9F6FB0080D912 /* HomeViewModel.swift */; };
+		12C265C02DE9F7630080D912 /* PDFService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C265BF2DE9F7630080D912 /* PDFService.swift */; };
+		12C265C32DE9F82C0080D912 /* PDFViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C265C22DE9F82C0080D912 /* PDFViewRepresentable.swift */; };
+		12C265C62DE9F8F50080D912 /* TransactionPDFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C265C52DE9F8F50080D912 /* TransactionPDFView.swift */; };
+		12C266022DEAE2FF0080D912 /* ShareSheetRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C266012DEAE2FF0080D912 /* ShareSheetRepresentable.swift */; };
+		12C266042DEB35010080D912 /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C266032DEB35010080D912 /* CacheService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		12C265A22DE9F2480080D912 /* PDFReportGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFReportGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C265A52DE9F2480080D912 /* PDFReportGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFReportGeneratorApp.swift; sourceTree = "<group>"; };
+		12C265B32DE9F44D0080D912 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		12C265B52DE9F4ED0080D912 /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		12C265BB2DE9F6E30080D912 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		12C265BD2DE9F6FB0080D912 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		12C265BF2DE9F7630080D912 /* PDFService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFService.swift; sourceTree = "<group>"; };
+		12C265C22DE9F82C0080D912 /* PDFViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFViewRepresentable.swift; sourceTree = "<group>"; };
+		12C265C52DE9F8F50080D912 /* TransactionPDFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPDFView.swift; sourceTree = "<group>"; };
+		12C266012DEAE2FF0080D912 /* ShareSheetRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetRepresentable.swift; sourceTree = "<group>"; };
+		12C266032DEB35010080D912 /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		12C2660F2DEB3A640080D912 /* Exceptions for "PDFReportGenerator" folder in "PDFReportGenerator" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 12C265A12DE9F2480080D912 /* PDFReportGenerator */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		12C265A42DE9F2480080D912 /* PDFReportGenerator */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				12C2660F2DEB3A640080D912 /* Exceptions for "PDFReportGenerator" folder in "PDFReportGenerator" target */,
+			);
+			path = PDFReportGenerator;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12C2659F2DE9F2480080D912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12C265992DE9F2480080D912 = {
+			isa = PBXGroup;
+			children = (
+				12C266002DEAE2EB0080D912 /* ViewControllerRepresentables */,
+				12C265C42DE9F8DE0080D912 /* Transaction */,
+				12C265C12DE9F81E0080D912 /* ViewRepresentables */,
+				12C265BA2DE9F6D70080D912 /* Home */,
+				12C265B92DE9F6C80080D912 /* Service */,
+				12C265B82DE9F6C20080D912 /* App */,
+				12C265A42DE9F2480080D912 /* PDFReportGenerator */,
+				12C265A32DE9F2480080D912 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12C265A32DE9F2480080D912 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12C265A22DE9F2480080D912 /* PDFReportGenerator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12C265B82DE9F6C20080D912 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				12C265A52DE9F2480080D912 /* PDFReportGeneratorApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		12C265B92DE9F6C80080D912 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				12C265B32DE9F44D0080D912 /* APIService.swift */,
+				12C265BF2DE9F7630080D912 /* PDFService.swift */,
+				12C266032DEB35010080D912 /* CacheService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		12C265BA2DE9F6D70080D912 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				12C265BB2DE9F6E30080D912 /* HomeView.swift */,
+				12C265BD2DE9F6FB0080D912 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		12C265C12DE9F81E0080D912 /* ViewRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				12C265C22DE9F82C0080D912 /* PDFViewRepresentable.swift */,
+			);
+			path = ViewRepresentables;
+			sourceTree = "<group>";
+		};
+		12C265C42DE9F8DE0080D912 /* Transaction */ = {
+			isa = PBXGroup;
+			children = (
+				12C265B52DE9F4ED0080D912 /* TransactionModel.swift */,
+				12C265C52DE9F8F50080D912 /* TransactionPDFView.swift */,
+			);
+			path = Transaction;
+			sourceTree = "<group>";
+		};
+		12C266002DEAE2EB0080D912 /* ViewControllerRepresentables */ = {
+			isa = PBXGroup;
+			children = (
+				12C266012DEAE2FF0080D912 /* ShareSheetRepresentable.swift */,
+			);
+			path = ViewControllerRepresentables;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12C265A12DE9F2480080D912 /* PDFReportGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12C265B02DE9F24A0080D912 /* Build configuration list for PBXNativeTarget "PDFReportGenerator" */;
+			buildPhases = (
+				12C2659E2DE9F2480080D912 /* Sources */,
+				12C2659F2DE9F2480080D912 /* Frameworks */,
+				12C265A02DE9F2480080D912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				12C265A42DE9F2480080D912 /* PDFReportGenerator */,
+			);
+			name = PDFReportGenerator;
+			packageProductDependencies = (
+			);
+			productName = PDFReportGenerator;
+			productReference = 12C265A22DE9F2480080D912 /* PDFReportGenerator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12C2659A2DE9F2480080D912 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					12C265A12DE9F2480080D912 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 12C2659D2DE9F2480080D912 /* Build configuration list for PBXProject "PDFReportGenerator" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 12C265992DE9F2480080D912;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 12C265A32DE9F2480080D912 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12C265A12DE9F2480080D912 /* PDFReportGenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12C265A02DE9F2480080D912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12C2659E2DE9F2480080D912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12C265B62DE9F4ED0080D912 /* TransactionModel.swift in Sources */,
+				12C265BE2DE9F6FB0080D912 /* HomeViewModel.swift in Sources */,
+				12C266042DEB35010080D912 /* CacheService.swift in Sources */,
+				12C265C02DE9F7630080D912 /* PDFService.swift in Sources */,
+				12C265B42DE9F44D0080D912 /* APIService.swift in Sources */,
+				12C265BC2DE9F6E30080D912 /* HomeView.swift in Sources */,
+				12C266022DEAE2FF0080D912 /* ShareSheetRepresentable.swift in Sources */,
+				12C265A62DE9F2480080D912 /* PDFReportGeneratorApp.swift in Sources */,
+				12C265C62DE9F8F50080D912 /* TransactionPDFView.swift in Sources */,
+				12C265C32DE9F82C0080D912 /* PDFViewRepresentable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		12C265AE2DE9F24A0080D912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		12C265AF2DE9F24A0080D912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12C265B12DE9F24A0080D912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PDFReportGenerator/Preview Content\"";
+				DEVELOPMENT_TEAM = W46VRGWQXB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PDFReportGenerator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janviarora.PDFReportGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		12C265B22DE9F24A0080D912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PDFReportGenerator/Preview Content\"";
+				DEVELOPMENT_TEAM = W46VRGWQXB;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PDFReportGenerator/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.janviarora.PDFReportGenerator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12C2659D2DE9F2480080D912 /* Build configuration list for PBXProject "PDFReportGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C265AE2DE9F24A0080D912 /* Debug */,
+				12C265AF2DE9F24A0080D912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12C265B02DE9F24A0080D912 /* Build configuration list for PBXNativeTarget "PDFReportGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12C265B12DE9F24A0080D912 /* Debug */,
+				12C265B22DE9F24A0080D912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12C2659A2DE9F2480080D912 /* Project object */;
+}
